@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Phần mềm học tiếng Nhật やれ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page-body">
+    <header class="login-page-header">
+        <a href="index.html" style="color:white; text-decoration:none;"><h1>Phần mềm học tiếng Nhật やれ</h1></a>
+    </header>
+
+    <div class="login-container">
+        <h2 class="form-title">Đăng nhập Tài khoản</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="role-select">Chọn vai trò của bạn:</label>
+                <select id="role-select" name="role" class="form-control">
+                    <option value="student_dashboard.html">Học sinh</option>
+                    <option value="teacher_dashboard.html">Giáo viên</option>
+                    <option value="admin_dashboard.html">Quản trị viên</option>
+                    <option value="index.html">Khách</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="username">Email:</label>
+                <input type="email" id="username" name="username" class="form-control" placeholder="Nhập email của bạn">
+            </div>
+            <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Nhập mật khẩu">
+            </div>
+
+            <div class="form-options">
+                <a href="forgot_password.html" class="form-link">Quên mật khẩu?</a>
+            </div>
+            
+            <a href="student_dashboard.html" class="button" id="login-btn" style="width: 100%; text-align: center; display: block; box-sizing: border-box; margin: 10px 0;">Đăng nhập</a>
+            
+        </form>
+        <p class="form-footer-text">
+            Chưa có tài khoản? <a href="register.html" class="form-link">Đăng ký tại đây</a>
+        </p>
+    </div>
+
+    <footer class="main-footer login-footer">
+        <p>2025 Phần mềm học tiếng Nhật やれ.</p>
+    </footer>
+
+    <script>
+        document.getElementById('role-select').addEventListener('change', function() {
+            var loginButton = document.getElementById('login-btn');
+            loginButton.href = this.value;
+        });
+    </script>
+</body>
+</html>

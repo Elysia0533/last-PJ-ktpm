@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm bài tập - Phần mềm học tiếng Nhật やれ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .question-block { margin-bottom: 25px; }
+        .question-block p { font-weight: bold; margin-bottom: 10px; }
+        .answer-options label { margin-right: 20px; font-weight: normal; }
+    </style>
+</head>
+<body>
+    <div class="dashboard-wrapper">
+         <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>やれ - Học Sinh</h2>
+                <p>Xin chào, ABC</p>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="student_dashboard.html">Bảng điều khiển</a></li>
+                    <li><a href="wip.html">Lớp học của tôi</a></li>
+                    <li><a href="wip.html" class="active">Bài tập</a></li>
+                    <li><a href="wip.html">Hỏi đáp (Q&A)</a></li>
+                    <li><a href="profile_update.html">Cập nhật thông tin</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html">Đăng xuất</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h1>Bài tập Bài 1 - Lớp N5 Cấp tốc</h1>
+            <div class="section">
+                <form action="#">
+                    <div class="question-block">
+                        <p>Câu 1: 「わたし」?</p>
+                        <div class="answer-options">
+                            <input type="radio" id="q1a1" name="q1" value="a">
+                            <label for="q1a1">A) Bạn</label>
+                            <input type="radio" id="q1a2" name="q1" value="b">
+                            <label for="q1a2">B) Tôi</label>
+                            <input type="radio" id="q1a3" name="q1" value="c">
+                            <label for="q1a3">C) Anh ấy</label>
+                            <input type="radio" id="q1a4" name="q1" value="d">
+                            <label for="q1a4">D) Cô ấy</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-block">
+                        <p>Câu 2: Chọn từ đúng cho "Gia đình".</p>
+                        <div class="answer-options">
+                             <input type="radio" id="q2a1" name="q2" value="a">
+                            <label for="q2a1">A) がっこう</label>
+                            <input type="radio" id="q2a2" name="q2" value="b">
+                            <label for="q2a2">B) ともだち</label>
+                            <input type="radio" id="q2a3" name="q2" value="c">
+                            <label for="q2a3">C) かぞく</label>
+                            <input type="radio" id="q2a4" name="q2" value="d">
+                            <label for="q2a4">D) せんせい</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question-block">
+                        <p>Câu 3: Điền vào chỗ trống: 「これは＿＿です。」</p>
+                        <input type="text" class="form-control" placeholder="Nhập câu trả lời của bạn...">
+                    </div>
+                    
+                    <hr style="margin: 30px 0;">
+                    
+                    <a href="student_dashboard.html" class="button">Nộp bài</a>
+                </form>
+            </div>
+            <a href="student_dashboard.html">&larr; Quay lại Bảng điều khiển</a>
+        </main>
+    </div>
+</body>
+</html>

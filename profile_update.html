@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin Cá nhân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+             <div class="sidebar-header">
+                <h2>やれ - Tài khoản</h2>
+                <p>Xin chào, User</p>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#">Bảng điều khiển</a></li>
+                    <li><a href="profile_update.html" class="active">Cập nhật thông tin</a></li>
+                    <li><a href="password_change.html">Đổi mật khẩu</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html">Đăng xuất</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h1>Thông tin Cá nhân</h1>
+            <div class="section">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="display-name">Họ và Tên:</label>
+                        <input type="text" id="display-name" name="display-name" class="form-control" value="Tanaka">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" value="tanaka@example.com" readonly>
+                        <small>Email không thể thay đổi.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Ngày sinh:</label>
+                        <input type="date" id="dob" name="dob" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại:</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="form-group">
+                        <label for="avatar">Ảnh đại diện:</label>
+                        <input type="file" id="avatar" name="avatar" class="form-control">
+                    </div>
+
+                    <a href="wip.html" class="button">Lưu Thay Đổi</a>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
